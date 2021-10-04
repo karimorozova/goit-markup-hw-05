@@ -125,11 +125,28 @@ line-height: 1.19;
 .contacts-item:not(:last-child) {
     margin-right: 50px;
 }
+.item-nav {
+    position: relative;
+}
 
 
 
 .link-nav.current {
     color: var(--accent-color);
+}
+.link-nav.current::after {
+    position: absolute;
+    bottom: 0;
+left: 0;
+
+    content: "";
+    width: 100%;
+height: 4px;
+
+
+background-color: var(--accent-color);
+border-radius: 2px;
+
 }
 
 .link-nav {
