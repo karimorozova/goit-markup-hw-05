@@ -281,15 +281,36 @@ line-height: 1.71;
     display: flex;
 }
 .about-item {
+    position: relative;
+    
     flex-basis: calc((100% - 60px) / 3);;
     
 }
 .about-item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
-.about-link {
-    display: block;
+.about-description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+   
+    padding: 27px 0;
+
 }
+.about-text {
+    
+
+font-weight: 700;
+font-size: 14px;
+line-height: calc(16 / 14);
+text-align: center;
+
+text-transform: uppercase;
+color: var(--primary-white-color);
+}
+
 
 /* Our team */
 .team {
