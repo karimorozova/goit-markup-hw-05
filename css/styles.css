@@ -248,6 +248,8 @@ transition: background-color 250ms var(--timing-function);
 }
 
 /* Modal */
+
+
 .is-hidden {
     visibility: hidden;
     opacity: 0;
