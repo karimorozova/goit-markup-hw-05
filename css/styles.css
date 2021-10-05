@@ -297,11 +297,28 @@ height: 30px;
 right: 0;
 top: 0;
 cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
 
 background-color: var(--primary-white-color);
 border-radius: 50%;
 border: 1px solid rgba(0, 0, 0, 0.1);
+transition: border 3000ms var(--timing-function);
 
+}
+.modal-icon {
+    fill: #000000;
+    transition: fill 3000ms var(--timing-function);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    border: 1px solid var(--accent-color);
+}
+.modal-btn:hover .modal-icon ,
+.modal-btn:focus .modal-icon  {
+    fill: var(--accent-color);
 }
 
 
